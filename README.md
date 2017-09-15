@@ -1,1 +1,1 @@
-# webpack-hotServer-middle
+# webpack-simpleDev-middleware
