@@ -1,1 +1,1 @@
-# webpack-simpleDev-middleware
+# webpack-simple-dev-middleware

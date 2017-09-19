@@ -1,0 +1,11 @@
+{
+  "name": "webpack-simple-dev-middleware",
+  "version": "1.0.0",
+  "main": "middleware.js",
+  "author": "zylong",
+  "license": "MIT",
+  "dependencies": {
+    "memory-fs": "~0.4.1",
+    "mime": "^1.3.4"
+  }
+}

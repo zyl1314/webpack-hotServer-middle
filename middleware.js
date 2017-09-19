@@ -6,6 +6,7 @@ module.exports = function(compiler, options) {
     var context = {
         state: false,
         compiler: compiler,
+        callbacks: [],
         options: options
     }
     
@@ -22,7 +23,12 @@ module.exports = function(compiler, options) {
 
         shared.handleRequest(filename, processRequest);
         function processRequest() {
-
+            var content = context.fs.readFileSync(filename);
+            res.setHeader("Content-Type", mime.lookup(filename) + "; charset=UTF-8");
+            res.statusCode = 200;
+            res.end(content);
         }
     }
+
+    return webpackDevMiddleware;
 }
